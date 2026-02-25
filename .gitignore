@@ -1,0 +1,46 @@
+# Composer
+vendor/
+composer.lock
+
+# PHP
+*.log
+.phpunit.result.cache
+.php_cs.cache
+
+# Database
+*.sql
+!database/setup.sql
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if using build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Session files
+sessions/
+
+# Cache
+cache/
+*.cache
+
+# Uploads
+uploads/
+temp/

@@ -1,0 +1,21 @@
+{
+    "name": "7learn/games-platform",
+    "description": "Interactive Online Games Platform - بازی‌های آنلاین",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "7Learn Development Team",
+            "email": "dev@7learn.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "ext-mysqli": "*",
+        "ext-json": "*"
+    },
+    "scripts": {
+        "start": "php -S localhost:8000",
+        "dev": "php -S localhost:8000 -t ."
+    }
+}

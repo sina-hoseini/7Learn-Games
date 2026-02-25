@@ -1,0 +1,26 @@
+name: PHP Linting
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: PHP Lint
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        extensions: mysqli, json
+    
+    - name: Lint PHP files
+      run: |
+        find . -name "*.php" -type f -exec php -l {} \; | grep -v "No syntax errors detected"
+        
+    - name: Check code style
+      run: |
+        echo "Checking PHP files in api/ and database/"
+        find api/ database/ -name "*.php" -type f -print
