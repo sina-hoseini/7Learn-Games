@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: 7learn-games
+    env: php
+    region: us-east
+    plan: free
+    buildCommand: composer install
+    startCommand: "php -S 0.0.0.0:8000"
+    envVars:
+      - key: PHP_VERSION
+        value: 7.4
+      - key: DB_HOST
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false

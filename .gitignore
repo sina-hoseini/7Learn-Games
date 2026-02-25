@@ -1,6 +1,10 @@
 # Composer
 vendor/
-composer.lock
+# composer.lock - نیازمند است برای hosting
+
+# Deployment
+Procfile
+.buildpacks
 
 # PHP
 *.log
